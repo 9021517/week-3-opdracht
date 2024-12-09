@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekeningen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rekeningen</h1>
+    </header>
+    <div class="dashboard">
+        <header>
+          <h1>Rekeningbeheer Dashboard</h1>
+        </header>
+        <main>
+          <section class="balance-overview">
+            <h2>Overzicht Saldo's</h2>
+            <ul id="accounts-list">
+              <li>Spaarrekening: €1.500,00</li>
+              <li>Betaalrekening: €2.300,00</li>
+              <li>Zakelijke Rekening: €12.000,00</li>
+            </ul>
+          </section>
+          <section class="new-account">
+            <h2>Nieuwe Rekening Aanmaken</h2>
+            <form id="new-account-form">
+              <label for="account-name">Naam van de Rekening</label>
+              <input type="text" id="account-name" placeholder="Bijv. Vakantiesparen" required>
+              <label for="starting-balance">Beginsaldo (€)</label>
+              <input type="number" id="starting-balance" placeholder="Bijv. 500" required>
+              <button type="submit">Rekening Aanmaken</button>
+            </form>
+          </section>
+        </main>
+      </div>
+  
+      <script src="javascript.js"></script>
+
+</body>
+</html>
